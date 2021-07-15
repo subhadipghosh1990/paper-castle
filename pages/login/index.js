@@ -1,5 +1,6 @@
 
 import Image from "next/image"
+import Link from "next/link"
 
 const Index = () => {
     return(
@@ -12,7 +13,7 @@ const Index = () => {
                                 {/* <img src="images/signin-image.jpg" alt="sing up image"/> */}
                                 <Image width={300} height={357} src="/images/signin-image.jpg"/>
                             </figure>
-                            <a href="/signup" className="signup-image-link">Create an account</a>
+                            <Link href="/signup"><a className="signup-image-link">Create an account</a></Link>
                         </div>
 
                         <div className="signin-form">
@@ -37,9 +38,9 @@ const Index = () => {
                             <div className="social-login">
                                 <span className="social-label">Or login with</span>
                                 <ul className="socials">
-                                    <li><a href="#"><i className="display-flex-center zmdi zmdi-facebook"></i></a></li>
-                                    <li><a href="#"><i className="display-flex-center zmdi zmdi-twitter"></i></a></li>
-                                    <li><a href="#"><i className="display-flex-center zmdi zmdi-google"></i></a></li>
+                                    <li><Link href="#"><a><i className="display-flex-center zmdi zmdi-facebook"></i></a></Link></li>
+                                    <li><Link href="#"><a><i className="display-flex-center zmdi zmdi-twitter"></i></a></Link></li>
+                                    <li><Link href="#"><a><i className="display-flex-center zmdi zmdi-google"></i></a></Link></li>
                                 </ul>
                             </div>
                         </div>

@@ -1,5 +1,5 @@
-
 import Image from "next/image"
+import Link from "next/link"
 
 const Index = () => {
     return(
@@ -40,7 +40,11 @@ const Index = () => {
 
                                 <div className="form-group">
                                     <input type="checkbox" name="agree-term" id="agree-term" className="agree-term"  required/>
-                                    <label htmlFor="agree-term" className="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" className="term-service">Terms of service *</a></label>
+                                    <label htmlFor="agree-term" className="label-agree-term">
+                                        <span><span></span></span>
+                                        I agree all statements in  
+                                        <Link href="#">
+                                            <a className="term-service">Terms of service *</a></Link></label>
                                 </div>
 
                                 <div className="form-group form-button">
@@ -53,7 +57,7 @@ const Index = () => {
                                 {/* <img src="images/signup-image.jpg" alt="sing up image"> */}
                                     <Image width={294} height={314} src="/images/signup-image.jpg"/>
                                 </figure>
-                            <a href="/login" className="signup-image-link">I am already member</a>
+                                <Link href="/login"><a className="signup-image-link">I am already member</a></Link>
                         </div>
                     </div>
                 </div>
